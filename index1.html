@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vahan Counter</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="head">Vahan Counter</h1>
+    <div class="counter">
+      <div class="counter-item">
+        <h2>Pedastrians</h2>
+        <p id="pedestrian-count">0</p>
+        <div class="button-group">
+            <button onclick="increment('pedestrian-count')">+</button>
+            <button onclick="decrement('pedestrian-count')">-</button>
+        </div>
+      </div>
+      <div class="counter-item">
+        <h2>Bicycle</h2>
+        <p id="bicycle-count">0</p>
+        <div class="button-group">
+            <button onclick="increment('bicycle-count')">+</button>
+            <button onclick="decrement('bicycle-count')">-</button>
+        </div>
+      </div>
+      <div class="counter-item">
+        <h2>Motor Cycle</h2>
+        <p id="motor-count">0</p>
+        <div class="button-group">
+            <button onclick="increment('motor-count')">+</button>
+            <button onclick="decrement('motor-count')">-</button>
+        </div>
+      </div>
+      <div class="counter-item">
+        <h2>Three-Wheelers</h2>
+        <p id="auto-count">0</p>
+        <div class="button-group">
+            <button onclick="increment('auto-count')">+</button>
+            <button onclick="decrement('auto-count')">-</button>
+        </div>
+      </div>
+      <div class="counter-item">
+        <h2>Light Vehicles</h2>
+        <p id="light-count">0</p>
+        <div class="button-group">
+            <button onclick="increment('light-count')">+</button>
+            <button onclick="decrement('light-count')">-</button>
+        </div>
+      </div>
+      <div class="counter-item">
+        <h2>Heavy Vehicles</h2>
+        <p id="heavy-count">0</p>
+        <div class="button-group">
+            <button onclick="increment('heavy-count')">+</button>
+            <button onclick="decrement('heavy-count')">-</button>
+        </div>
+      </div>
+      <br><br>
+    </div>
+    <button class="reset-button" onclick="resetCounts()">Reset All</button>
+    <button class="clear-button" onclick="clearStorage()">Clear Saved Data</button>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>
